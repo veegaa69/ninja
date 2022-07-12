@@ -31,9 +31,8 @@ function addValor() {
 addValor()
 
 // Qual o retorno da função? (Use comentários de bloco).
-/* 
-7
--/
+/* 7 */
+/* O valor da variável agora é 7.*/
 
 
 /*
@@ -50,6 +49,15 @@ function check(x, y, z){
   return x*y*z + 2}
 }
 
+//correto:
+function check (x, y,z ) {
+  if (x === undefined || y === undefined || x === undefined) {
+    return 'Preencha todos os valores corretamente!'
+  }
+
+  return (a * b * c) + 2;
+}
+
 // Invoque a função criada acima, passando só dois números como argumento.
 check(2,3)
 
@@ -60,7 +68,7 @@ check(2,3)
 check(2,3,4)
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-//9
+//26
 
 /*
 Crie uma função com as seguintes características:
